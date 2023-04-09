@@ -1,0 +1,13 @@
+#If "1" is entered, you are asked to enter how you're feeling, if they're feeling "happy, program will print" "Shrek"
+#if anything else is entered then program will print "Aladdin"
+#When off is entered, program stops.
+
+number = input('Enter 1 - recommendation, off - complete')
+while number != 'off':
+    if number == '1':
+        preference = input('You are feeling:')
+        if preference == ('happy'):
+            print('Shrek')
+        else:
+            print('Aladdin')
+    number = input('Enter 1 - recommendation, off - complete')
