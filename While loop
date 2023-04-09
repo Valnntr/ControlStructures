@@ -1,0 +1,11 @@
+#Tasks: program should ask you to enter a promo code until the “fresh” promo code is entered or until 3 attempts to enter it have been made.
+
+promo = input('Enter your promo code:')
+count = 0 and count < 3
+while count<2:
+    if promo != 'fresh':
+        promo = input('Enter your promo code:')
+        count+=1
+    else:
+        print("Accepted on attempt #" , count +1)
+        break
